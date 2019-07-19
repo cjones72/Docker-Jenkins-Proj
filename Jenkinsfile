@@ -1,1 +1,1 @@
-pipeline {agent {dockerfile true}steps {echo 'Hello World!'}}
+node {    def app    stage('Clone repository') {              checkout scm    }    stage('Build image') {             app = docker.build("cjones72/dockerjenkins")    }    stage('Push image') {               docker.withRegistry('https://registry.hub.docker.com', 'cjones72') {            app.push("latest")        }    }}
