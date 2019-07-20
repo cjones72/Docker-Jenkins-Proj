@@ -1,0 +1,20 @@
+{
+  "name": "cjones72-Docker-Jenkins-Proj",
+  "version": "1.0.0",
+  "description": "Proj Docker Jenkins",
+  "main": "main.js",
+  "scripts": {
+    "test": "node test.js",
+    "start": "node main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cjones72/Docker-Jenkins-Proj.git"
+  },
+  "keywords": [
+    "node",
+    "docker",
+    "dockerfile"
+  ],
+  "author": "chelsea.jones@accenturefederal.com"
+}
